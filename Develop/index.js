@@ -135,7 +135,13 @@ const questions = [
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  inquirer.prompt(questions).then(function (answer) {
+    console.log(answer);
+    var filecontent = generateMarkdown(answer);
+    writeToFile(filecontent);
+  });
+}
 
 // Function call to initialize app
 init();
