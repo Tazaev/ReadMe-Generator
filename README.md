@@ -45,3 +45,7 @@ THEN this is added to the section of the README entitled Questions, with instruc
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
+
+https://user-images.githubusercontent.com/104277419/174132610-00ea1fd1-6274-495a-9f50-ce45f6e0984d.mp4
+
+
