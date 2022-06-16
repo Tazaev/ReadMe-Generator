@@ -48,10 +48,10 @@ function renderLicenseSection(license) {
 }
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
-## ${renderLicenseSection(data.license)} ${renderLicenseBadge(data.license)}
-### ${renderLicenseLink(data.license)}
+function generateMarkdown(answer) {
+  return `# ${answer.title}
+## ${renderLicenseSection(answer.license)} ${renderLicenseBadge(answer.license)}
+### ${renderLicenseLink(answer.license)}
 
 ## Table of Contents:
 ###  * [License](#license)
@@ -63,23 +63,23 @@ function generateMarkdown(data) {
 
 ## Installation:
 ### The following must be installed for this Generator to function:
-### ${data.installation}
+### ${answer.installation}
 
 ## Usage:
-### ${data.usage}
+### ${answer.usage}
 
 ## Contributors:
-### ${data.contributions}
+### ${answer.contributions}
 
 ## Tests:
 ### Run the following commands in the terminal to test this Generator:
-### ${data.test}
+### ${answer.tests}
 
 ## Questions:
 ### For any questions about this generator, please contact
-### Github: https://github.com/${data.askMe}
+### Github: https://github.com/${answer.GitHubEmail}
 ### or
-### Email: ${data.email}
+### Email: ${answer.Email}
 `;
 }
 
